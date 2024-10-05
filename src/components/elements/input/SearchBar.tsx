@@ -1,5 +1,4 @@
 import React from 'react'
-import LocationIcon from '../../../../public/assets/icons/SearchIcon'
 import { IconInterface } from '../../../../public/assets/icons/type'
 
 interface SearchBarProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -14,13 +13,13 @@ export const SearchBar = ({
 }: SearchBarProps) => {
   return (
     <div
-      className="py-4 px-4 rounded-lg shadow-md flex items-center gap-4"
+      className="py-4 px-4 rounded-[10px] shadow-md flex items-center gap-4 bg-[#FFFFFF] w-full"
       {...props}
     >
       {Icon && <Icon />}
       <input
         type="text"
-        className="border-none w-full focus:outline-none"
+        className="border-none w-full focus:outline-none bg-transparent"
         placeholder={placeholder}
       />
     </div>
