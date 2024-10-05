@@ -4,16 +4,21 @@ import React, { useState } from 'react'
 import ChatCard from '@/components/elements/card/ChatCard'
 import SendIcon from '../../../public/assets/icons/SendIcon'
 
+interface MessageProps {
+  role: 'user' | 'assistant';
+  text: string;
+}
+
 const ChatModule = () => {
   const [input, setInput] = useState('')
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<MessageProps[]>([
     { role: 'assistant', text: 'Hello! How can I assist you today?' },
   ])
 
   const handleSendMessage = () => {
     if (input.trim() === '') return
 
-    const newMessage = { role: 'user', text: input }
+    const newMessage: MessageProps = { role: 'user', text: input }
     setMessages((prevMessages) => [...prevMessages, newMessage])
     setInput('')
   }
