@@ -10,7 +10,7 @@ const Hero = () => {
   const router = useRouter()
 
   const handleNavigate = () => {
-    router.push('/map') 
+    router.push('/map')
   }
 
   return (
@@ -32,7 +32,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <Button className="text-body px-[62px]" leftIcon={PlantIcon} onClick={handleNavigate}>
+          <Button
+            className="text-body px-[62px]"
+            leftIcon={PlantIcon}
+            onClick={handleNavigate}
+          >
             Analyze Your Crops
           </Button>
           <p className="text-primary-light-green text-body-bold">
