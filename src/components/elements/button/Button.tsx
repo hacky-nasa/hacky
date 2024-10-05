@@ -1,39 +1,46 @@
 import React from 'react'
-import { twMerge } from 'tailwind-merge';
-import { tv, VariantProps } from 'tailwind-variants';
-import { IconInterface } from '../../../../public/assets/icons/type';
+import { twMerge } from 'tailwind-merge'
+import { tv, VariantProps } from 'tailwind-variants'
+import { IconInterface } from '../../../../public/assets/icons/type'
 
 const style = tv({
-    base: "py-2 bg-[#E1EDDA] rounded-3xl flex items-center gap-2 hover:bg-[#314A2A] hover:text-[#FEFEFE] drop-shadow-button",
-    variants: {
-        size: {
-            lg: "px-16",
-            md: "px-4"
-        }
+  base: 'py-2 bg-[#E1EDDA] rounded-3xl flex items-center gap-2 hover:bg-[#314A2A] hover:text-[#FEFEFE] drop-shadow-button',
+  variants: {
+    size: {
+      lg: 'px-16',
+      md: 'px-4',
     },
-    defaultVariants: {
-        size: "md",
-    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
 })
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof style> {
-    asChild?: boolean;
-    leftIcon?: React.FC<IconInterface>;
-    rightIcon?: React.FC<IconInterface>;
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof style> {
+  asChild?: boolean
+  leftIcon?: React.FC<IconInterface>
+  rightIcon?: React.FC<IconInterface>
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, asChild = false, leftIcon:LeftIcon, rightIcon:RightIcon, ...props }, ref) => {
+  (
+    {
+      className,
+      asChild = false,
+      leftIcon: LeftIcon,
+      rightIcon: RightIcon,
+      ...props
+    },
+    ref
+  ) => {
     return (
-        <button
-        ref={ref}
-        {...props}
-        className={twMerge(style(props), className)}
-      >
-        {LeftIcon && <LeftIcon/>}
+      <button ref={ref} {...props} className={twMerge(style(props), className)}>
+        {LeftIcon && <LeftIcon />}
         <span>{props.children}</span>
-        {RightIcon && <RightIcon/>}
+        {RightIcon && <RightIcon />}
       </button>
-    );
+    )
   }
-);
+)

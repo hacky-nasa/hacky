@@ -16,7 +16,7 @@ const config: Config = {
         sans: ['var(--font-poppins)'],
       },
       dropShadow: {
-        button: "2px 5px 2px rgba(0, 0, 0, 0.15)",
+        button: '2px 5px 2px rgba(0, 0, 0, 0.15)',
       },
     },
   },
