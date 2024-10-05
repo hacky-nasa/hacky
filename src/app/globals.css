@@ -22,3 +22,26 @@ button:disabled {
   cursor: not-allowed !important;
   pointer-events: all !important;
 }
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Custom Scrollbar Hidden */
+.custom-scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

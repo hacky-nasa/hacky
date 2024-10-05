@@ -16,7 +16,7 @@ const ChatCard: React.FC<ChatCardProps> = ({ role, text }) => {
       style={{ alignSelf: role === 'user' ? 'flex-end' : 'flex-start' }}
     >
       <Markdown
-        className="text-body markdown-body"
+        className="text-body markdown-body break-all"
         remarkPlugins={[remarkGfm, remarkBreaks]}
       >
         {text.replaceAll(/\n/gi, '&nbsp; \n')}
