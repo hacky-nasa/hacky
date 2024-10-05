@@ -1,10 +1,18 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { Button } from '../../../components/elements/button/Button'
 import PlantIcon from '../../../../public/assets/icons/PlantIcon'
 import AigreeIcon from '../../../../public/assets/icons/AigreeIcon'
 
 const Hero = () => {
+  const router = useRouter()
+
+  const handleNavigate = () => {
+    router.push('/map') 
+  }
+
   return (
     <div className="flex flex-col w-full relative">
       <Image
@@ -24,11 +32,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <Button className="text-body px-[62px]" leftIcon={PlantIcon}>
+          <Button className="text-body px-[62px]" leftIcon={PlantIcon} onClick={handleNavigate}>
             Analyze Your Crops
           </Button>
           <p className="text-primary-light-green text-body-bold">
-            A solution every body agrees
+            A solution everybody agrees
           </p>
         </div>
       </div>
