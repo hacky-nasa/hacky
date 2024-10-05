@@ -29,6 +29,7 @@ export const MainPageModule = () => {
                 key={param.title}
                 title={param.title}
                 percentage={param.percentage}
+                icon={param.icon}
               />
             ))}
           </div>

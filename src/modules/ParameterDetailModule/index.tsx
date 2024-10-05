@@ -32,6 +32,7 @@ export const ParameterDetailModule = () => {
               key={param.title}
               title={param.title}
               percentage={param.percentage}
+              icon={param.icon}
               isActive={parameter === param.title}
               onClick={() =>
                 setParameter(parameter === param.title ? '' : param.title)

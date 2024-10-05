@@ -73,7 +73,7 @@ export const MapModule = () => {
               className="bg-primary-green text-white py-1 rounded-lg"
               onClick={handleSaveLocation}
             >
-              Choose this location
+              <span className="text-body">Choose this location</span>
             </button>
           </InfoWindow>
         )}
