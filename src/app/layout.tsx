@@ -25,8 +25,8 @@ export default function RootLayout({
       className={`scroll-smooth scroll-pt-[100px] ${poppins.variable}`}
     >
       <body className="min-h-screen overflow-x-hidden custom-scrollbar antialiased">
-        <div className='flex justify-center'>
-          <div className='w-full sm:w-[402px] min-h-screen shadow-custom'>
+        <div className="flex justify-center">
+          <div className="w-full sm:w-[402px] min-h-screen shadow-custom">
             {children}
           </div>
         </div>

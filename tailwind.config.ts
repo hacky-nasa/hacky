@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'custom': '-5px 0 80px -5px rgba(0, 0, 0, 0.3)',
+        custom: '-5px 0 80px -5px rgba(0, 0, 0, 0.3)',
       },
       colors: {
         background: 'var(--background)',
