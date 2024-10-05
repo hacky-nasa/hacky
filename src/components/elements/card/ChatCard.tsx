@@ -4,7 +4,7 @@ import remarkBreaks from 'remark-breaks'
 import remarkGfm from 'remark-gfm'
 
 interface ChatCardProps {
-  role: string
+  role: 'user' | 'assistant'
   text: string
 }
 

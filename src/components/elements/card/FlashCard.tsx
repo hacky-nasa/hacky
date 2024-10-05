@@ -29,9 +29,8 @@ const FlashCard: React.FC<FlashCardProps> = ({ type, question, answer }) => {
           ease: [0.43, 0.13, 0.23, 0.96],
         }}
       >
-        {/* Front (Question) */}
         <div
-          className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden ${
+          className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden gap-2 ${
             type === 1
               ? 'bg-primary-green text-white'
               : 'bg-primary-dark-blue text-white'
@@ -40,24 +39,23 @@ const FlashCard: React.FC<FlashCardProps> = ({ type, question, answer }) => {
             backfaceVisibility: 'hidden',
           }}
         >
-          <p className="text-lg font-bold">Question</p>
-          <p className="text-base">{question}</p>
+          <p className="text-main-header">Question</p>
+          <p className="text-body-bold">{question}</p>
         </div>
 
-        {/* Back (Answer) */}
         <div
-          className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden ${
+          className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden gap-2 ${
             type === 1
               ? 'bg-primary-light-green text-primary-green'
               : 'bg-primary-light-blue text-primary-green'
           }`}
           style={{
             backfaceVisibility: 'hidden',
-            transform: 'rotateY(180deg)', // This keeps the back rotated 180° behind the front
+            transform: 'rotateY(180deg)',
           }}
         >
-          <p className="text-lg font-bold">Answer</p>
-          <p className="text-base">{answer}</p>
+          <p className="text-main-header">Answer</p>
+          <p className="text-body-bold">{answer}</p>
         </div>
       </motion.div>
     </motion.button>
