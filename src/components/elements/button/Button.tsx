@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import React, { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
@@ -37,15 +37,18 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(false)
     return (
-      <button ref={ref} {...props} className={twMerge(style(props), className)}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      <button
+        ref={ref}
+        {...props}
+        className={twMerge(style(props), className)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        {LeftIcon && <LeftIcon stroke={isHovered ? "white" : "black"}/>}
+        {LeftIcon && <LeftIcon stroke={isHovered ? 'white' : 'black'} />}
         <span className="text-body">{props.children}</span>
-        {RightIcon && <RightIcon stroke={isHovered ? "white" : "black"}/>}
+        {RightIcon && <RightIcon stroke={isHovered ? 'white' : 'black'} />}
       </button>
     )
   }

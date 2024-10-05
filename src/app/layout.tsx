@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen overflow-x-hidden custom-scrollbar-hidden antialiased flex justify-center">
         <OpenAIContextProvider>
-          <div className="w-full sm:w-[402px] min-h-screen shadow-custom">
+          <div className="w-full max-w-[402px] min-h-screen shadow-custom">
             <Navbar />
             {children}
           </div>
