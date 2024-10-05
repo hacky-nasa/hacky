@@ -38,7 +38,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button ref={ref} {...props} className={twMerge(style(props), className)}>
         {LeftIcon && <LeftIcon />}
-        <span>{props.children}</span>
+        <span className="text-body">{props.children}</span>
         {RightIcon && <RightIcon />}
       </button>
     )
