@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '../../../components/elements/button/Button'
 import PlantIcon from '../../../../public/assets/icons/PlantIcon'
-import AigreeIcon from '../../../../public/assets/icons/AigreeIcon';
+import AigreeIcon from '../../../../public/assets/icons/AigreeIcon'
 
 const Hero = () => {
   return (

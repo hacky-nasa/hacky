@@ -13,15 +13,14 @@ const TestKnowledge = () => {
         className="z-[-1]"
       />
       <div className="flex flex-col w-full px-5 pt-5 pb-[50px] h-full absolute gap-2">
-        <p className='text-main-header text-super-white'>
+        <p className="text-main-header text-super-white">
           Test your knowledge!
         </p>
-        <p className='text-body-bold text-super-white'>
-          Think you know how climate change impacts agriculture? Challenge yourself with our interactive flashcards!
+        <p className="text-body-bold text-super-white">
+          Think you know how climate change impacts agriculture? Challenge
+          yourself with our interactive flashcards!
         </p>
-        <Button className="w-fit px-[19px] text-black">
-          Let’s Play!
-        </Button>
+        <Button className="w-fit px-[19px] text-black">Let’s Play!</Button>
       </div>
     </div>
   )

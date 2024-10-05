@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './sections/Hero'
 import Info from './sections/Info'
-import TestKnowledge from './sections/TestKnowledge';
+import TestKnowledge from './sections/TestKnowledge'
 
 const HomeModule = () => {
   return (
