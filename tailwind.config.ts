@@ -37,6 +37,7 @@ const config: Config = {
         'dark-grey': '#4F4F4F',
         'light-grey': '#888888',
         white: '#F4F4F4',
+        'super-white': '#FFFFFF',
 
         'state-success': '#41CA76',
         'state-warning': '#FDC33A',
