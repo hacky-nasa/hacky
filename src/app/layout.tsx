@@ -10,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Agri',
-  description: 'Predict You Future',
+  title: 'AiGree',
+  description: 'A solution every body agrees',
 }
 
 export default function RootLayout({
