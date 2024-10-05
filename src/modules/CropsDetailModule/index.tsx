@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { FilterButton } from '@/components/elements/button/FilterButton'
 import { datahama } from './constant'
-import { Button } from '../../components/elements/button/Button';
-import AsksIcon from '../../../public/assets/icons/AsksIcon';
+import { Button } from '../../components/elements/button/Button'
+import AsksIcon from '../../../public/assets/icons/AsksIcon'
 import { useRouter } from 'next/navigation'
 
 export const CropsDetailModule = () => {
@@ -134,10 +134,11 @@ export const CropsDetailModule = () => {
         )}
         <div className="flex flex-col gap-2 pt-2">{renderContent()}</div>
       </section>
-      <Button 
-      rightIcon={AsksIcon} 
-      className='shadow-lg px-5 py-[7.2px] absolute bottom-8 right-8'
-      onClick={handleNavigate}>
+      <Button
+        rightIcon={AsksIcon}
+        className="shadow-lg px-5 py-[7.2px] absolute bottom-8 right-8"
+        onClick={handleNavigate}
+      >
         Ask More
       </Button>
     </section>

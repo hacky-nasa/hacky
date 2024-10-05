@@ -22,7 +22,7 @@ export const ParameterCard = ({
       onClick={onClick}
     >
       {/* <div className="bg-green-900 w-10 aspect-square" /> */}
-      {Icon && <Icon stroke={isActive ? "white" : "black"}/>}
+      {Icon && <Icon stroke={isActive ? 'white' : 'black'} />}
       <div className="flex items-center flex-col">
         <p className="text-caption-bold">{title}</p>
         <p className="text-caption">{percentage}%</p>
