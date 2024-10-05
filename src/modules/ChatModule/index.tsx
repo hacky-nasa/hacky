@@ -5,8 +5,8 @@ import ChatCard from '@/components/elements/card/ChatCard'
 import SendIcon from '../../../public/assets/icons/SendIcon'
 
 interface MessageProps {
-  role: 'user' | 'assistant';
-  text: string;
+  role: 'user' | 'assistant'
+  text: string
 }
 
 const ChatModule = () => {
