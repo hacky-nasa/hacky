@@ -14,6 +14,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'AiGree',
   description: 'A solution every body agrees',
+  icons: {
+    icon: '/assets/aigree-icon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -26,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`scroll-smooth scroll-pt-[100px] ${poppins.variable}`}
     >
-      <body className="min-h-screen overflow-x-hidden custom-scrollbar antialiased flex justify-center">
+      <body className="min-h-screen overflow-x-hidden custom-scrollbar-hidden antialiased flex justify-center">
         <OpenAIContextProvider>
           <div className="w-full sm:w-[402px] min-h-screen shadow-custom">
             <Navbar />

@@ -12,6 +12,8 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev)
 
+  const closeMenu = () => setIsMenuOpen(false)
+
   return (
     <>
       <nav
@@ -45,20 +47,23 @@ const Navbar = () => {
           <Link
             href="/"
             className="flex flex-row gap-5 text-section-header text-black justify-center items-center"
+            onClick={closeMenu}
           >
             <BarnIcon />
             Home
           </Link>
           <Link
-            href="/"
+            href="/map"
             className="flex flex-row gap-5 text-section-header text-black justify-center items-center"
+            onClick={closeMenu}
           >
             <ChartIcon />
             Analyze
           </Link>
           <Link
-            href="/"
+            href="/qna"
             className="flex flex-row gap-5 text-section-header text-black justify-center items-center"
+            onClick={closeMenu}
           >
             <CardIcon />
             Flashcards

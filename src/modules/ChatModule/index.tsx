@@ -20,7 +20,7 @@ const ChatModule = () => {
 
   return (
     <div className="flex flex-col h-screen justify-between pb-[50px] px-5 pt-24">
-      <div className="flex-1 overflow-y-auto mb-4 space-y-3 custom-scrollbar">
+      <div className="flex-1 overflow-y-auto mb-4 space-y-3 custom-scrollbar-hidden">
         {messages.map((message, index) => (
           <ChatCard key={index} role={message.role} text={message.text} />
         ))}

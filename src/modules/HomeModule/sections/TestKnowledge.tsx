@@ -1,8 +1,16 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '../../../components/elements/button/Button'
+import { useRouter } from 'next/navigation'
 
 const TestKnowledge = () => {
+  const router = useRouter()
+
+  const handleNavigate = () => {
+    router.push('/qna')
+  }
+
   return (
     <div className="flex flex-col w-full relative">
       <Image
@@ -20,7 +28,9 @@ const TestKnowledge = () => {
           Think you know how climate change impacts agriculture? Challenge
           yourself with our interactive flashcards!
         </p>
-        <Button className="w-fit px-[19px] text-black">Let’s Play!</Button>
+        <Button className="w-fit px-[19px] text-black" onClick={handleNavigate}>
+          Let’s Play!
+        </Button>
       </div>
     </div>
   )
