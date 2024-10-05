@@ -32,7 +32,9 @@ const FlashCard: React.FC<FlashCardProps> = ({ type, question, answer }) => {
         {/* Front (Question) */}
         <div
           className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden ${
-            type === 1 ? 'bg-primary-green text-white' : 'bg-primary-dark-blue text-white'
+            type === 1
+              ? 'bg-primary-green text-white'
+              : 'bg-primary-dark-blue text-white'
           }`}
           style={{
             backfaceVisibility: 'hidden',
@@ -45,7 +47,9 @@ const FlashCard: React.FC<FlashCardProps> = ({ type, question, answer }) => {
         {/* Back (Answer) */}
         <div
           className={`absolute w-full h-full p-5 rounded-[10px] flex flex-col justify-center items-center text-center backface-hidden ${
-            type === 1 ? 'bg-primary-light-green text-primary-green' : 'bg-primary-light-blue text-primary-green'
+            type === 1
+              ? 'bg-primary-light-green text-primary-green'
+              : 'bg-primary-light-blue text-primary-green'
           }`}
           style={{
             backfaceVisibility: 'hidden',

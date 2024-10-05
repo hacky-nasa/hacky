@@ -63,7 +63,8 @@ const flashcards = [
     id: 10,
     question:
       'How does low humidity affect irrigation needs for crops, especially in arid regions?',
-    answer: 'It increases water evaporation, requiring more frequent irrigation.',
+    answer:
+      'It increases water evaporation, requiring more frequent irrigation.',
   },
 ]
 
@@ -79,12 +80,13 @@ const QnAModule = () => {
         />
       </div>
 
-      <div className='absolute inset-0 flex flex-col items-center justify-center text-center'>
-        <div className='flex flex-col gap-4 px-5'>
-          <p className='text-white text-section-header'>
-            Explore geographical aspects with our engaging and informative flashcards.
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col gap-4 px-5">
+          <p className="text-white text-section-header">
+            Explore geographical aspects with our engaging and informative
+            flashcards.
           </p>
-          <p className='text-white text-body'>
+          <p className="text-white text-body">
             Tap to reveal the answer, and swipe to explore more flashcards.
           </p>
         </div>
