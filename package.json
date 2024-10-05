@@ -1,0 +1,32 @@
+{
+  "name": "hacky",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noEmit",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
+    "test-all": "npm run format && npm run check-format && npm run check-types",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "^14.2.14",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "husky": "^9.1.6",
+    "postcss": "^8",
+    "prettier": "3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
