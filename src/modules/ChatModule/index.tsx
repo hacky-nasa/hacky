@@ -90,14 +90,14 @@ const ChatModule = () => {
         )}
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 w-full">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type your message..."
-          className="flex-1 px-5 py-[5px] bg-super-white shadow-lg rounded-[20px] focus:outline-none placeholder:text-light-grey"
+          className="w-full px-5 py-[5px] bg-super-white shadow-lg rounded-[20px] focus:outline-none placeholder:text-light-grey"
         />
         <button
           onClick={handleSendMessage}

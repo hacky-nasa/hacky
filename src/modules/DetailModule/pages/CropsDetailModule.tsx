@@ -114,7 +114,7 @@ export const CropsDetailModule = () => {
 
   return (
     <section className="w-full h-full pb-10 relative flex flex-col gap-10">
-      <div className="absolute w-full h-[270px] -z-10">
+      <div className="absolute w-full h-[280px] min-[330px]:h-[280px] min-[353px]:h-[250px] min-[370px]:h-[240px] -z-10">
         <Image
           src="/assets/images/CropsDetailPage/backdrop.png"
           alt="backdrop"
