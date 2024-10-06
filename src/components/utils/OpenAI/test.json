@@ -1,51 +1,54 @@
 {
   "parameterExplanation": {
-    "soilMoisture": "Current soil moisture levels show some fluctuations. After a period of drought, there is now a moderate moisture level. This is essential for strawberry plants, which thrive in well-moistened soil.",
-    "temperature": "The temperature is stable and suitable for strawberries, averaging above 25°C, which is ideal for their growth.",
-    "windSpeed": "The wind speeds are moderate, typically around 3-4 m/s, which is manageable for strawberry plants; they don't flourish in very windy conditions.",
-    "windDirection": "Predominantly coming from the east, which is fairly stable. This direction does not pose a threat to strawberry cultivation.",
-    "humidity": "Humidity levels have varied but are mostly in the comfortable range around 70-80%. High humidity helps strawberries but excessive moisture can lead to diseases."
+    "soilMoisture": {
+      "index": "Moderate",
+      "summary": "The soil has sufficient moisture for planting, but it's important to monitor levels to avoid drought."
+    },
+    "temperature": {
+      "index": "Warm",
+      "summary": "The temperature is suitable for growing a variety of warm-season crops."
+    },
+    "windSpeed": {
+      "index": "Low",
+      "summary": "Low wind speeds are favorable for crop growth and protection."
+    },
+    "windDirection": {
+      "index": "Stable",
+      "summary": "Consistent wind direction will help maintain humidity levels in the field."
+    },
+    "humidity": {
+      "index": "High",
+      "summary": "High humidity levels can encourage plant growth but may also promote disease."
+    }
   },
   "bestCropsToPlant": [
     {
-      "plantName": "Raspberries",
-      "explanation": "Similar to strawberries, raspberries enjoy similar growing conditions and can thrive in the same types of soil."
+      "plantName": "Corn",
+      "explanation": "Corn thrives in warm weather and its moderate moisture requirements fit well with current conditions."
     },
     {
-      "plantName": "Blueberries",
-      "explanation": "They also thrive in acidic soil and benefit from similar moisture levels as strawberries."
+      "plantName": "Beans",
+      "explanation": "Beans are ideal as they help fix nitrogen in the soil and enjoy the warm temperatures."
     },
     {
       "plantName": "Tomatoes",
-      "explanation": "They can adapt to similar climatic conditions and require moderate moisture, just like strawberries."
+      "explanation": "Tomatoes love high humidity and warm temperatures, making them a good choice now."
+    },
+    {
+      "plantName": "Peppers",
+      "explanation": "Peppers also prefer warm climates and can be planted for a good yield."
     }
   ],
   "MyCropsExplanation": {
-    "summary": "Strawberries are a good crop to plant given the current conditions in your area. Make sure to manage water levels to keep the soil moist but not too wet.",
-    "details": [
-      "Strawberries require well-drained soil with plenty of organic matter.",
-      "Water regularly but avoid waterlogging.",
-      "Mulching can help retain moisture and suppress weeds."
-    ],
-    "pests": [
-      {
-        "pestsName": "Aphids",
-        "explanation": "These small insects suck the sap from strawberry plants, weakening them and potentially transmitting diseases."
-      },
-      {
-        "pestsName": "Spider Mites",
-        "explanation": "They thrive in hot, dry conditions, so monitor moisture levels to prevent infestations."
-      }
-    ],
-    "weeds": [
-      {
-        "weedsName": "Crabgrass",
-        "explanation": "A common weed that competes with strawberry plants for nutrients and moisture."
-      },
-      {
-        "weedsName": "Dandelions",
-        "explanation": "They can spread quickly and inhibit the growth of strawberries by competing for resources."
-      }
-    ]
-  }
+    "isIAskSpecificCropsRecomendation": false,
+    "recommendToPlant": true,
+    "summary": "Considering the current weather conditions, it is a good time to plant.",
+    "details": {
+      "why": "The weather is favorable with adequate moisture and warm temperatures.",
+      "when": "You can plant now for a successful growing season."
+    },
+    "pests": [],
+    "weeds": []
+  },
+  "summarizeOfAllAnswerAndData": "In summary, you should consider planting corn, beans, tomatoes, and peppers. The moisture, temperature, and wind conditions are favorable for these crops. Monitor weather changes closely to manage any risks."
 }

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { Button } from '../../../components/elements/button/Button'
 import PlantIcon from '../../../../public/assets/icons/PlantIcon'
 import AigreeIcon from '../../../../public/assets/icons/AigreeIcon'
+import Link from 'next/link'
 
 const Hero = () => {
   const router = useRouter()
@@ -32,13 +33,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <Button
-            className="text-body px-[62px]"
-            leftIcon={PlantIcon}
-            onClick={handleNavigate}
-          >
-            Analyze Your Crops
-          </Button>
+          <Link href={'/map'}>
+            <Button className="text-body px-[62px]" leftIcon={PlantIcon}>
+              Analyze Your Crops
+            </Button>
+          </Link>
           <p className="text-primary-light-green text-body-bold">
             A solution everybody agrees
           </p>

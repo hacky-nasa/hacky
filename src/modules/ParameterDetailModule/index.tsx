@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { SearchBar } from '@/components/elements/input/SearchBar'
-import SearchIcon from '../../../public/assets/icons/SearchIcon'
 import { ParameterCard } from '../MainPageModule/components/ParameterCard'
 import { parametersList } from './type'
 

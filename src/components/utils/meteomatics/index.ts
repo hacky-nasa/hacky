@@ -1,3 +1,5 @@
+'use server'
+
 export const fetchData = async (src: string) => {
   try {
     const response = await fetch(
