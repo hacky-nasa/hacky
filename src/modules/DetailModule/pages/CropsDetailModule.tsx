@@ -188,14 +188,13 @@ export const CropsDetailModule = () => {
         )}
         <div className="flex flex-col gap-2 pt-2">{renderContent()}</div>
       </section>
-      <Link href={'/chat'}>
-        <Button
-          rightIcon={AsksIcon}
-          className="shadow-lg px-5 py-[7.2px] absolute bottom-8 right-8"
-        >
-          Ask More
-        </Button>
-      </Link>
+      <div className="max-w-[402px] w-full fixed  bottom-8 right-8">
+        <Link href={'/chat'}>
+          <Button rightIcon={AsksIcon} className="shadow-lg px-5 py-[7.2px]">
+            Ask More
+          </Button>
+        </Link>
+      </div>
     </section>
   )
 }
