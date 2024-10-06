@@ -133,7 +133,7 @@ export const CropsDetailModule = () => {
         <p className="text-body">
           Based on the analysis of your geographical conditions, the current
           climate is{!searchResponse.recommendToPlant && `n't`} ideal for
-          growing strawberries.
+          growing {searchValue}.
         </p>
       </div>
       <section className="flex flex-col gap-3">
@@ -168,7 +168,7 @@ export const CropsDetailModule = () => {
                       onClick={() => setSubFilter(index)}
                       isActive={subFilter == index}
                     >
-                      Pest {index}
+                      Pest {index + 1}
                     </FilterButton>
                   )
                 )}
@@ -179,7 +179,7 @@ export const CropsDetailModule = () => {
                       onClick={() => setSubFilter(index)}
                       isActive={subFilter == index}
                     >
-                      Weed {index}
+                      Weed {index + 1}
                     </FilterButton>
                   )
                 )}
